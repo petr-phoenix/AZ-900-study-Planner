@@ -1,13 +1,39 @@
 /* ==========================================================
    AZ-900 Study Planner — styles
    ========================================================== */
+
+:root {
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px)
+}
+html {
+  scroll-padding-top:env(safe-area-inset-top,0px)
+}
+body {
+  margin:0;
+  padding:0;
+  font:14px -apple-system,BlinkMacSystemFont,sans-serif;
+  background:#fff;
+  color:#000
+}
+img {
+  max-width:100%
+}
+[hidden]:not([hidden=until-found i]) {
+  display:none!important
+}
+
 :root {
   --bg: #f4f6fb; --card: #ffffff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0;
   --brand: #2563eb; --brand-2: #7c3aed; --ok: #10b981; --bad: #ef4444; --warn: #f59e0b;
   --grad: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
   --shadow: 0 1px 2px rgba(15,23,42,.06), 0 8px 24px rgba(15,23,42,.06);
   --radius: 18px;
-}
+
+
+
 [data-theme="dark"] {
   --bg: #0b1120; --card: #131c31; --text: #e8eefc; --muted: #94a3b8; --line: #243049;
   --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
